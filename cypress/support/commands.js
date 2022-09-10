@@ -9,4 +9,5 @@ import "./methods/compareDietsPageMethods"
 import "./methods/orderDetailsPageMethods"
 import "./methods/basketPageMethods"
 import "./methods/helpers"
-
+import "./methods/editDietPageMethods"
+import "./methods/addNextDietPageMethods"

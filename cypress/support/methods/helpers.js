@@ -29,3 +29,5 @@ Cypress.Commands.add("addDietToBasket", () => {
     .goToBasket()
 })
 
+
+  
