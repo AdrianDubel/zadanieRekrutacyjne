@@ -23,7 +23,9 @@ describe("Sprawdz czy użytkownik może wykonać podstawowe funkcje koszyka", ()
   });
 
   it("Usunięcie diety z koszyka", () => {
-    cy.addDietToBasket().clickDeleteDiet().clickConfirmDeleteDiet();
+    cy.addDietToBasket()
+      .clickDeleteDiet()
+      .clickConfirmDeleteDiet();
     // check if the diet has been correctly removed from the basket
     cy.get(basketPage.emptyBasketFrame).should("exist").and("be.visible");
     cy.get(basketPage.emptyBasketText)
