@@ -23,6 +23,9 @@ describe("Sprawdz czy użytkownik może wykonać podstawowe funkcje koszyka", ()
   });
 
   it("Usunięcie diety z koszyka", () => {
+
+    const emptyBasketText = "Wygląda na to, że nie masz żadnej diety w koszyku"
+
     cy.addDietToBasket()
       .clickDeleteDiet()
       .clickConfirmDeleteDiet();
@@ -31,7 +34,7 @@ describe("Sprawdz czy użytkownik może wykonać podstawowe funkcje koszyka", ()
     cy.get(basketPage.emptyBasketText)
       .should("exist")
       .and("be.visible")
-      .and("contain.text", "Wygląda na to, że nie masz żadnej diety w koszyku");
+      .and("contain.text", emptyBasketText);
   });
 
   it("Edycja diety z koszyka", () => {
