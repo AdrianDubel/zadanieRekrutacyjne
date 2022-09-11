@@ -1,5 +1,4 @@
 import { nextDietPage } from "../locators/addNextDietPage";
-import { editDietPage } from "../locators/editDietPage";
 
 Cypress.Commands.add("chooseProgram", () => {
   cy.get(nextDietPage.typeOfprograms)
@@ -39,7 +38,7 @@ Cypress.Commands.add("clickNextStep", () => {
 });
 
 Cypress.Commands.add("clickGoAhed", () => {
-  cy.get(editDietPage.goAheadBtn).click();
+  cy.get(nextDietPage.goAheadBtn).click();
 });
 
 Cypress.Commands.add("clickAddToBasket", () => {

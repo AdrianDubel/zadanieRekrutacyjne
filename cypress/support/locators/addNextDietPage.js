@@ -8,4 +8,5 @@ export const nextDietPage = {
     caloriesVarianList: '.steps-page__list',
     caloriesVariant: '.steps-page__item',
     nextStepBtn: '.button.button-block.button-icon-right.button-l.button-success',
+    goAheadBtn: '.button.button-block.button-icon-right.button-m.button-success.spacer-top-24'
 }
