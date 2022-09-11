@@ -87,6 +87,41 @@ Cypress.Commands.add("clickShowSelectedDiets", () => {
     cy.get(configuratorPage.showSelectedDiets).click({force:true})
 })
 
+Cypress.Commands.add("clickBackBtn", () => {
+    cy.get(configuratorPage.backBtn)
+      .contains('Wstecz')
+      .click({force:true})
+})
+
+Cypress.Commands.add("clickNext", () => {
+    cy.get(configuratorPage.nextBtnSex)
+      .click({force:true})
+})
+
+Cypress.Commands.add("getMaleCard", () => {
+    cy.get(configuratorPage.maleCards).last()
+})
+
+Cypress.Commands.add("getActivityCard", () => {
+    cy.get(configuratorPage.activityCard).last()
+})
+
+Cypress.Commands.add("clickNextPhysicalActivity", () => {
+    cy.get(configuratorPage.nextPhysicalActivityBtn).click({force:true})
+})
+
+Cypress.Commands.add("getGoalCards", () => {
+    cy.get(configuratorPage.goalCards).first()
+})
+
+Cypress.Commands.add("clickNextGoal", () => {
+    cy.get(configuratorPage.nextGoalBtn).click({force:true})
+})
+
+Cypress.Commands.add("howToEatCard", () => {
+    cy.get(configuratorPage.howToEatCards).first()
+})
+
 
 
 

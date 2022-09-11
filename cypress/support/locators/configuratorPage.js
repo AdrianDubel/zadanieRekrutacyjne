@@ -1,15 +1,22 @@
 export const configuratorPage = {
     maleBtn: "#male",
+    maleCards: '.suggestion__card-sex',
     nextBtnSex: "#next-sex",
     ageInput: "input[name='age']",
     weightInput: "input[name='weight']",
     heightInput: "input[name='height']",
     nextBtnParameters: "#next-age-weight-height",
+    backBtn: '.button.button-blank',
+    activityCard: '.calculator-modal__card-checkbox',
+    nextPhysicalActivityBtn: '#next-physical-activity',
+    goalCards: '.calculator-modal__card-checkbox',
+    nextGoalBtn: '#next-goal',
+    howToEatCards: '.calculator-modal__card-checkbox',
     ActivityBtns: {
         lackOfActivity: "Brak aktywności",
         lowActivity: 'Mała aktywność',
         mediumActivity: 'Średnia aktywność',
-        bigActivity: 'Duża aktywnośćć'
+        bigActivity: 'Duża aktywność'
     },
     goalBtns: {
         loseWeight:'Chcę schudnąć',
